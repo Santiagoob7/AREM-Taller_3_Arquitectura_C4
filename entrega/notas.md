@@ -4,9 +4,8 @@
 4 de septiembre de 2026
 
 ## 👥 Integrantes presentes
-* Jorge Steven Doncel Bejarano
 * David Santiago Buendia Londoño
-* Esteban
+* nombre jorge
 
 ## 🧠 Actividades realizadas en clase
 * **Discusión de equipo:** Se analizó el caso práctico de RedExpress para entender la jerarquía de las vistas C1 y C2, y luego extrapolamos esos conceptos a la realidad de Insuclínicos Ltda.
