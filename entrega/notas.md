@@ -22,4 +22,5 @@
 | :--- | :--- | :--- |
 | Modelado final en draw.io (C1 y C2) | Jorge Steven Doncel | 06/09/2026 |
 | Redacción del informe.md | David Santiago Buendia | 06/09/2026 |
-| Ajuste de diagramas y referencias | Esteban | 06/09/2026 |
+| Ajuste de diagramas | David Santiago Buendia | 06/09/2026 |
+| Ajuste de referencias | Jorge Steven Doncel | 06/09/2026 |
