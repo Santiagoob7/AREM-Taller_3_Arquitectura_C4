@@ -5,7 +5,7 @@ Taller 3 - Arquitectura Actual del Sistema con el Modelo C4
 
 ## 👥 Integrantes del equipo
 * David Santiago Buendia Londoño (Santiagoob7)
-* nombre jorge
+* Jorge Steven Doncel (gevengood)
 
 ## 🧠 Descripción general del trabajo
 El objetivo de este taller fue representar la arquitectura actual (AS-IS) de Insuclínicos Ltda., enfocándonos en el macro-proceso de Gestión y Cumplimiento de Pedido. Utilizando las vistas de Contexto (C1) y Contenedores (C2) del modelo C4, se documentó cómo interactúan los actores internos y externos con el ecosistema de información de la empresa, evidenciando la fragmentación de los datos y la alta dependencia de herramientas ofimáticas aisladas.
