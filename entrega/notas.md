@@ -5,7 +5,7 @@
 
 ## 👥 Integrantes presentes
 * David Santiago Buendia Londoño
-* nombre jorge
+* Jorge Steven Doncel
 
 ## 🧠 Actividades realizadas en clase
 * **Discusión de equipo:** Se analizó el caso práctico de RedExpress para entender la jerarquía de las vistas C1 y C2, y luego extrapolamos esos conceptos a la realidad de Insuclínicos Ltda.
