@@ -1,0 +1,137 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="C2-Contenedores-RedExpress" id="c2-redexpress-diag">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Límite del sistema en alcance: Plataforma RedExpress -->
+        <mxCell id="boundary_redexpress" value="&lt;b&gt;Plataforma RedExpress · Contenedores Internos&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0D5091;strokeWidth=2;dashed=1;align=left;verticalAlign=top;spacingLeft=15;spacingTop=10;fontColor=#083F75;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="250" y="40" width="710" height="660" as="geometry" />
+        </mxCell>
+
+        <!-- Actores externos C1 -->
+        <mxCell id="c2_act_usuario" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Usuario Final&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Cliente que envía/recibe&lt;/font&gt;&lt;/div&gt;" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="160" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_act_mensajero" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Mensajero&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Entregas en campo&lt;/font&gt;&lt;/div&gt;" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="160" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_act_operador" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Operador Logístico&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Gestión de rutas y despachos&lt;/font&gt;&lt;/div&gt;" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="160" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Sistemas externos C1 -->
+        <mxCell id="c2_ext_geo" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Proveedor Geolocalización&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[External System]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Cálculo de rutas y coordenadas&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;strokeColor=#736782;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="270" width="180" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_ext_notif" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;API de Notificaciones&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[External System]&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Envío SMS / Push / Email&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;strokeColor=#736782;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="520" width="180" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Contenedores Internos -->
+        <!-- App Movil -->
+        <mxCell id="cnt_appmovil" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;App Móvil&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[Container: React Native]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Permite a usuarios y mensajeros rastrear y actualizar envíos.&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E75B6;strokeColor=#1F4E79;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="90" width="190" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Portal Web Operadores -->
+        <mxCell id="cnt_webop" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Portal Web Operadores&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[Container: React SPA]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Interfaz web para administración logística y programación.&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E75B6;strokeColor=#1F4E79;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="270" width="190" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Balanceador de Carga -->
+        <mxCell id="cnt_lb" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Balanceador de Carga&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[Infrastructure: Nginx]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Distribuye el tráfico HTTPS entrante.&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#595959;strokeColor=#3B3838;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="510" y="180" width="170" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Modulo Gestion Paquetes -->
+        <mxCell id="cnt_gestion" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Gestión de Paquetes&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[Container: Spring Boot / Java]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Lógica central de negocio, órdenes y ciclo de vida del paquete.&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E75B6;strokeColor=#1F4E79;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="720" y="175" width="200" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Motor de Rutas -->
+        <mxCell id="cnt_rutas" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Motor de Rutas&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[Container: Python Service]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Algoritmos de optimización de rutas y tiempos.&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E75B6;strokeColor=#1F4E79;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="720" y="300" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Seguimiento GPS -->
+        <mxCell id="cnt_gps" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Seguimiento GPS&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[Container: Node.js / Socket.io]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Recepción y distribución de telemetría en tiempo real.&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E75B6;strokeColor=#1F4E79;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="720" y="410" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Sistema de Alertas -->
+        <mxCell id="cnt_alertas" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Sistema de Alertas&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[Container: Node.js]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Genera notificaciones basadas en eventos de despacho.&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2E75B6;strokeColor=#1F4E79;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="720" y="520" width="200" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Base de Datos Distribuida -->
+        <mxCell id="cnt_db" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Base de Datos Distribuida&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[Infrastructure: PostgreSQL Cluster]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#e0e0e0&quot;&gt;Almacena paquetes, usuarios, auditoría y rutas históricas.&lt;/font&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#595959;strokeColor=#3B3838;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="490" y="430" width="190" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Conexiones C2 -->
+        <mxCell id="c2_rel_1" value="HTTPS/JSON" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0b4884;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="c2_act_usuario" target="cnt_appmovil">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_rel_2" value="HTTPS/JSON" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0b4884;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="c2_act_mensajero" target="cnt_appmovil">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_rel_3" value="HTTPS/JSON" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0b4884;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="c2_act_operador" target="cnt_webop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_rel_4" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1F4E79;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="cnt_appmovil" target="cnt_lb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_rel_5" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1F4E79;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="cnt_webop" target="cnt_lb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_rel_6" value="Enruta solicitudes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1F4E79;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="cnt_lb" target="cnt_gestion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_rel_7" value="SQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1F4E79;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="cnt_gestion" target="cnt_db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_rel_8" value="Solicita ruta óptima" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1F4E79;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="cnt_gestion" target="cnt_rutas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_rel_9" value="Consulta coordenadas&#xa;[REST]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#5F7387;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="cnt_rutas" target="c2_ext_geo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_rel_10" value="Ubicación en tiempo real" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1F4E79;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="cnt_gestion" target="cnt_gps">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_rel_11" value="Push / WebSocket" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#1F4E79;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="cnt_gps" target="cnt_appmovil">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="470" />
+              <mxPoint x="490" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="c2_rel_12" value="Dispara evento" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1F4E79;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="cnt_gestion" target="cnt_alertas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="c2_rel_13" value="Envía alerta&#xa;[REST]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;strokeColor=#5F7387;strokeWidth=2;fontSize=10;" edge="1" parent="1" source="cnt_alertas" target="c2_ext_notif">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

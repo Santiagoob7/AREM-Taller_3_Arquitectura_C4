@@ -19,7 +19,7 @@ El modelado se desarrolló en draw.io. Inicialmente, surgió el reto de aplicar 
 * **Supuestos:** Se asume que el Ecosistema de Gestión Operativa actual reside íntegramente en equipos locales sin sincronización en la nube, lo cual justifica el alto riesgo de pérdida de trazabilidad.
 
 ## 📈 Diagrama final entregado
-*(Asegúrate de subir las imágenes exportadas de tus diagramas a la carpeta y enlazar aquí los PNG o colocar los enlaces a los archivos .drawio)*
+
 * [Ver Vista de Contexto (C1)](./c1-contexto-final.drawio)
 * [Ver Vista de Contenedores (C2)](./c2-contenedores-final.drawio)
 
